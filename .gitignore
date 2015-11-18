@@ -1,0 +1,7 @@
+*~
+*.bak
+*.orig
+*.rej
+
+# Ignore patches dir
+patches/
