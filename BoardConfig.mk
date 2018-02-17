@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+-include device/bq/msm8937-common/BoardConfigCommon.mk
+
 LOCAL_PATH := device/bq/tenshi
 
 # Assert

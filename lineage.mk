@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tenshi device
 $(call inherit-product, device/bq/tenshi/device.mk)
 
+# Inherit from common device
+$(call inherit-product, device/bq/msm8937-common/msm8937.mk)
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
