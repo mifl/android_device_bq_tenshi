@@ -127,6 +127,7 @@ vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_ov5675.so
+vendor/lib/libmmcamera_qtech_gt24c64a_eeprom.so
 vendor/lib/libmmcamera_s5k3p3.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
