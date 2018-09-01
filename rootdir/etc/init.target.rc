@@ -27,6 +27,8 @@
 #
 #
 
+import init.bq.common.rc
+
 on early-init
     mkdir /firmware 0771 system system
     mkdir /system 0777 root root
@@ -109,30 +111,6 @@ on boot
     chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-005f/irq
     chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-005f/clk_enable
     chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-005f/wakeup_enable
-
-    # Double Tap to Wake
-    chown root system /sys/android_touch/wakeup_gesture_enable
-    chmod 0660 /sys/android_touch/wakeup_gesture_enable
-
-    # Vibrator intensity modifier
-    chown system system /sys/class/timed_output/vibrator/enable
-    chown system system /sys/class/timed_output/vibrator/wf_s0
-    chown system system /sys/class/timed_output/vibrator/wf_s1
-    chown system system /sys/class/timed_output/vibrator/wf_s2
-    chown system system /sys/class/timed_output/vibrator/wf_s3
-    chown system system /sys/class/timed_output/vibrator/wf_s4
-    chown system system /sys/class/timed_output/vibrator/wf_s5
-    chown system system /sys/class/timed_output/vibrator/wf_s6
-    chown system system /sys/class/timed_output/vibrator/wf_s7
-    chown system system /sys/class/timed_output/vibrator/wf_update_now
-
-    # Leds
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/blue/blink
-    chown system system /sys/class/leds/green/blink
-    chown system system /sys/class/leds/red/led_time
-    chown system system /sys/class/leds/blue/led_time
-    chown system system /sys/class/leds/green/led_time
 
 service ppd /system/vendor/bin/mm-pp-dpps
     class late_start

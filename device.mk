@@ -20,7 +20,8 @@ $(call inherit-product-if-exists, vendor/bq/tenshi/tenshi-vendor.mk)
 
 # Init
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.bq.common.rc
 
 # Camera
 PRODUCT_COPY_FILES += \
