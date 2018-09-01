@@ -1,3 +1,5 @@
+import init.bq.device.rc
+
 on boot
     # Double Tap to Wake
     chown root system /sys/android_touch/wakeup_gesture_enable
