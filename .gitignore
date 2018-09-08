@@ -5,3 +5,8 @@
 
 # Ignore patches dir
 patches/
+
+# Ignore mount system image
+system/
+system.img
+system.raw
